@@ -1,0 +1,101 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNio59nj627D3KI4dl1dWie",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Santhosh-byte522/dselabprogram1/blob/main/Exp2a.ipynb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Ex.No. 2(a)\n",
+        "READING DATA FROM TEXT FILES\n",
+        "Date: _____________\n",
+        "\n",
+        "TASK QUESTION\n",
+        "Task 1: Change print(file3.readlines()) to print(len(file3.readlines())). Run. See: the number of lines.\n",
+        "\n",
+        "Learn: readlines() gives a list of lines; len() counts the items in a list.\n",
+        "\n",
+        "Task 2: Copy the line print(file2.readline()) and paste it just below. Run. See: the second line is printed.\n",
+        "\n",
+        "Learn: readline() reads one line each time it is called; read() reads the whole file.\n",
+        "\n",
+        "First run the PROGRAM below as it is and see the output. Then do Task 1 and Task 2 in the same program (do not undo) and run it again — the output changes as per both tasks.\n",
+        "\n",
+        "After the tasks, update the AIM and ALGORITHM to match your changes, just like the code. Example: if you changed bins=20 to bins=10, add with 10 bins to the Aim and to the matching Algorithm step.\n",
+        "\n",
+        "AIM\n",
+        "To read data from a text file using Python file handling functions — read(), readline() and readlines().\n",
+        "\n",
+        "ALGORITHM\n",
+        "Step 1: Start the program.\n",
+        "\n",
+        "Step 2: Open the text file 'myfile.txt' in read mode using open().\n",
+        "\n",
+        "Step 3: Use read() to read the entire file content.\n",
+        "\n",
+        "Step 4: Close the file.\n",
+        "\n",
+        "Step 5: Open the file again and use readline() to read line by line.\n",
+        "\n",
+        "Step 6: Close the file.\n",
+        "\n",
+        "Step 7: Open the file again and use readlines() to read all lines into a list.\n",
+        "\n",
+        "Step 8: Display all three outputs.\n",
+        "\n",
+        "Step 9: Close the file.\n",
+        "\n",
+        "Step 10: Stop the program.\n",
+        "\n",
+        "PROGRAM\n",
+        "Click the code and press Shift + Enter to run it. The output appears just below the code.\n",
+        "\n",
+        "# Read the whole file\n",
+        "file1 = open('data/myfile.txt', 'r')  # 'r' = open for reading\n",
+        "print(\"Output of read():\")\n",
+        "print(file1.read())                   # whole file as one string\n",
+        "file1.close()\n",
+        "\n",
+        "# Read line by line\n",
+        "file2 = open('data/myfile.txt', 'r')\n",
+        "print(\"Output of readline():\")\n",
+        "print(file2.readline())               # only one line\n",
+        "file2.close()\n",
+        "\n",
+        "# Read into list\n",
+        "file3 = open('data/myfile.txt', 'r')\n",
+        "print(\"Output of readlines():\")\n",
+        "print(file3.readlines())              # all lines as a list\n",
+        "file3.close()                         # always close the file\n",
+        "RESULT\n",
+        "Thus the Python program to read data from a text file using read(), readline() and readlines() has been written, executed and the output was verified."
+      ],
+      "metadata": {
+        "id": "YPeRVirTs8tk"
+      }
+    }
+  ]
+}
